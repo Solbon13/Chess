@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="contaner">
+
+        <div class="menu">
+            <button class="menu_new" onclick="newChess()">Шахматы</button>
+            <button class="menu_new" onclick="randomTurn()">Случайный ход</button>
+        </div>
+
+        <div id="games"></div>
+        <div id="info"></div>
+        
+    </div>
+    
+    <div id="my_modal" class="modalChess">
+        <div class="modalChess_content">
+            <p>Выбор фигуры: </p>
+            <span class="close_modalChess_windows" id="Q">
+                &#9813
+            </span>
+            <span class="close_modalChess_windows" id="R">
+                &#9814
+            </span>
+            <span class="close_modalChess_windows" id="B">
+                &#9815
+            </span>
+            <span class="close_modalChess_windows" id="N">
+                &#9816
+            </span>
+        </div>
+    </div>
+    
+    <script src = "chess.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.chess__square{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.chess__square_black{
+    background-color: rgb(61, 173, 126);
+}
+
+.chess__square_white{
+    background-color: #d8b2785e;
+}
+
+.chess__square_is_move{
+    background-color: #ca5b395e;
+}
+
+.chess__square_prev_from{
+    background-color: #c72323e3;
+}
+
+.chess__square_prev_to{
+    background-color: #ad225c5e;
+}
+
+
+.chess__square_is_click{
+    background-color: #6586c25e;
+}
+
+.modalChess {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0,6);
+    z-index: 1000;
+}
+
+.modalChess .modalChess_content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    z-index: 99999;
+}
+
+.modalChess .modalChess_content .close_modalChess_windows {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
